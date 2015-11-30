@@ -27,6 +27,8 @@ module Mail
   class Body
 
     def initialize(string = '')
+      string = String.new(string)
+
       @boundary = nil
       @preamble = nil
       @epilogue = nil
